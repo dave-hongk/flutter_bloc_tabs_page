@@ -13,4 +13,10 @@ class TabsCubit extends Cubit<TabState> {
     if (tab == state.selected) return;
     emit(TabState((b) => b..selected = tab));
   }
+
+  @override
+  void onChange(Change<TabState> change) {
+    print(change);
+    super.onChange(change);
+  }
 }

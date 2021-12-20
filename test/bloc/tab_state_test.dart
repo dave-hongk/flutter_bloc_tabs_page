@@ -11,6 +11,11 @@ void main() {
       expect(Tab.tab5, Tab.tab5);
       expect(Tab.tab1 == Tab.tab2, isFalse);
     });
+
+    test('values', () {
+      expect(Tab.values.toList(),
+          [Tab.tab1, Tab.tab2, Tab.tab3, Tab.tab4, Tab.tab5]);
+    });
   });
 
   group('TabState', () {
