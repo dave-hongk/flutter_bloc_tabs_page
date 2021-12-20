@@ -4,36 +4,36 @@ import 'package:built_collection/built_collection.dart';
 part 'tabs_state.g.dart';
 
 /// {@template tab}
-/// Tab enum for the different tabs.
+/// Page tab enum for the different tabs.
 /// {@endtemplate}
-class Tab extends EnumClass {
+class PageTab extends EnumClass {
   /// Tab 1.
-  static const Tab tab1 = _$tab1;
+  static const PageTab tab1 = _$tab1;
   /// Tab 2.
-  static const Tab tab2 = _$tab2;
+  static const PageTab tab2 = _$tab2;
   /// Tab 3.
-  static const Tab tab3 = _$tab3;
+  static const PageTab tab3 = _$tab3;
   /// Tab 4.
-  static const Tab tab4 = _$tab4;
+  static const PageTab tab4 = _$tab4;
   /// Tab 5.
-  static const Tab tab5 = _$tab5;
+  static const PageTab tab5 = _$tab5;
 
   /// Tab enum values.
-  static BuiltSet<Tab> get values => _$values;
+  static BuiltSet<PageTab> get values => _$values;
 
   /// Tab enum value for the given name.
-  static Tab valueOf(String name) => _$valueOf(name);
+  static PageTab valueOf(String name) => _$valueOf(name);
 
-  const Tab._(String name) : super(name);
+  const PageTab._(String name) : super(name);
 }
 
 /// {@template tab_state}
-/// [TabState] represents the current [Tab] that is selected.
-/// Defaults to [Tab.tab1].
+/// [TabState] represents the current [PageTab] that is selected.
+/// Defaults to [PageTab.tab1].
 /// {@endtemplate}
 abstract class TabState implements Built<TabState, TabStateBuilder> {
-  /// Selected [Tab].
-  Tab get selected;
+  /// Selected [PageTab].
+  PageTab get selected;
 
   /// {@macro tab_state}
   factory TabState([Function(TabStateBuilder b) updates]) = _$TabState;
@@ -46,7 +46,7 @@ abstract class TabState implements Built<TabState, TabStateBuilder> {
 /// the selected field to be tab1.
 /// {@endtemplate}
 abstract class TabStateBuilder implements Builder<TabState, TabStateBuilder> {
-  Tab selected = Tab.tab1;
+  PageTab selected = PageTab.tab1;
 
   factory TabStateBuilder() = _$TabStateBuilder;
 

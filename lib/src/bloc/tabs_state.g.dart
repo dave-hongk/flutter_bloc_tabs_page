@@ -6,13 +6,13 @@ part of 'tabs_state.dart';
 // BuiltValueGenerator
 // **************************************************************************
 
-const Tab _$tab1 = const Tab._('tab1');
-const Tab _$tab2 = const Tab._('tab2');
-const Tab _$tab3 = const Tab._('tab3');
-const Tab _$tab4 = const Tab._('tab4');
-const Tab _$tab5 = const Tab._('tab5');
+const PageTab _$tab1 = const PageTab._('tab1');
+const PageTab _$tab2 = const PageTab._('tab2');
+const PageTab _$tab3 = const PageTab._('tab3');
+const PageTab _$tab4 = const PageTab._('tab4');
+const PageTab _$tab5 = const PageTab._('tab5');
 
-Tab _$valueOf(String name) {
+PageTab _$valueOf(String name) {
   switch (name) {
     case 'tab1':
       return _$tab1;
@@ -29,7 +29,7 @@ Tab _$valueOf(String name) {
   }
 }
 
-final BuiltSet<Tab> _$values = new BuiltSet<Tab>(const <Tab>[
+final BuiltSet<PageTab> _$values = new BuiltSet<PageTab>(const <PageTab>[
   _$tab1,
   _$tab2,
   _$tab3,
@@ -39,7 +39,7 @@ final BuiltSet<Tab> _$values = new BuiltSet<Tab>(const <Tab>[
 
 class _$TabState extends TabState {
   @override
-  final Tab selected;
+  final PageTab selected;
 
   factory _$TabState([void Function(TabStateBuilder)? updates]) =>
       (new TabStateBuilder()..update(updates)).build() as _$TabState;
@@ -77,13 +77,13 @@ class _$TabStateBuilder extends TabStateBuilder {
   _$TabState? _$v;
 
   @override
-  Tab get selected {
+  PageTab get selected {
     _$this;
     return super.selected;
   }
 
   @override
-  set selected(Tab selected) {
+  set selected(PageTab selected) {
     _$this;
     super.selected = selected;
   }

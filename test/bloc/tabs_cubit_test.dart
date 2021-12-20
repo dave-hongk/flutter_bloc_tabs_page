@@ -19,14 +19,14 @@ void main() {
       blocTest<TabsCubit, TabState>(
         'transition to new tab emits new state',
         build: () => TabsCubit(),
-        act: (cubit) => cubit.tabSelected(Tab.tab2),
-        expect: () => <TabState>[TabState((b) => b..selected = Tab.tab2)],
+        act: (cubit) => cubit.tabSelected(PageTab.tab2),
+        expect: () => <TabState>[TabState((b) => b..selected = PageTab.tab2)],
       );
 
       blocTest<TabsCubit, TabState>(
         'same as already selected does not emit new state',
         build: () => TabsCubit(),
-        act: (cubit) => cubit.tabSelected(Tab.tab1),
+        act: (cubit) => cubit.tabSelected(PageTab.tab1),
         expect: () => [],
       );
     });
