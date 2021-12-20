@@ -35,10 +35,6 @@ class HomeScreen extends StatelessWidget {
             return const ErrorPage();
           },
         ),
-        //     () {
-        //   switch()
-        //   return Page1();
-        // }(),
         bottomNavigationBar: BlocBuilder<TabsCubit, TabState>(
           buildWhen: (prev, cur) => prev.selected != cur.selected,
           builder: (context, tabState) {
